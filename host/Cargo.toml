@@ -1,0 +1,25 @@
+[package]
+name = "tavern"
+version = "0.1.0"
+edition = "2021"
+default-run = "tavern"
+
+[[bin]]
+name = "verify"
+path = "src/bin/verify.rs"
+
+[dependencies]
+proof-aggregation = { path = "../proof-aggregation" }
+attestation = { path = "../attestation" }
+
+risc0-zkvm = { workspace = true }
+clap = { workspace = true, features = ["derive"] }
+anyhow = { workspace = true }
+borsh = { workspace = true }
+tokio = { workspace = true }
+warp = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+uuid = { workspace = true }
+base64 = { workspace = true }
+sev = { workspace = true }

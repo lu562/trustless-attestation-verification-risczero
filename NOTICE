@@ -1,0 +1,12 @@
+# Third-Party Notices
+
+This project includes code from:
+
+- snpguest
+  Licensed under the Apache License, Version 2.0.
+  Source: https://github.com/virtee/snpguest/tree/main
+  (See LICENSES/Apache-2.0.txt for the license text.)
+    Adoptions: We use the attestation verification logic in verify.rs
+
+
+Any trademarks are the property of their respective owners.

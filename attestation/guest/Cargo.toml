@@ -1,0 +1,11 @@
+[package]
+name = "sev-attestation"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+risc0-zkvm = { workspace = true }
+sev = { workspace = true }
+anyhow = { workspace = true }
+x509-parser = { workspace = true }
+asn1-rs = "=0.6.2"

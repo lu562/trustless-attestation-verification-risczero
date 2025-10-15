@@ -1,0 +1,35 @@
+[workspace]
+resolver = "2"
+members = [
+  "host",
+  "attestation",
+  "attestation/guest",
+  "proof-aggregation",
+  "proof-aggregation/guest",
+]
+
+# Always optimize; building and running the guest takes much longer without optimization.
+[profile.dev]
+opt-level = 3
+
+[profile.release]
+debug = 1
+lto = true
+
+[workspace.dependencies]
+anyhow = "1.0.97"
+borsh = "1.5.7"
+clap = { version = "4.5.34" }
+sev = { git = "https://github.com/lu562/sev", default-features = false, features = ["serde", "snp", "crypto_nossl"] }
+risc0-zkvm = { version = "2.3.1" }
+risc0-zkp = "2.0.0"
+x509-parser = "0.16.0"
+tokio = { version = "1", features = ["full"] }
+warp = "0.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+uuid = { version = "1.4", features = ["v4"] }
+base64 = "0.21"
+
+proof-aggregation = { path = "../proof-aggregation" }
+attestation = { path = "../attestation" }

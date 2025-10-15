@@ -1,0 +1,9 @@
+[package]
+name = "sev-attestation-aggregation"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+risc0-zkvm = { workspace = true }
+attestation = { path = "../../attestation" }
+borsh = { workspace = true }
