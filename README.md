@@ -52,7 +52,15 @@ If you want to run the server with a customized IP and port number, use the foll
 
 ### Client Operations
 
+#### Prepare input JSON
+
 We provide sample inputs for testing purpose in the folder `samples`.
+
+When using your own SEV-SNP report and VCEK certificate, create the request JSON using the following command:
+
+```bash
+./target/release/prepare-input -r report.bin -v vcek.pem -o input.json
+```
 
 #### Send an Attestation Request
 
