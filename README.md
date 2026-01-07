@@ -21,7 +21,7 @@ rzup install
 2. Clone the repository:
 
 ```bash
-git clone https://github.com/tiktok_privacy_innovation/trustless-attestation-verification-risczero.git
+git clone https://github.com/tiktok-privacy-innovation/trustless-attestation-verification-risczero.git
 cd trustless-attestation-verification-risczero
 ```
 
